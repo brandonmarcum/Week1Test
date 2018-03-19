@@ -12,20 +12,22 @@ namespace Palindrome.Library
 
         public bool IsPalindrome()
         {
+            string userWordNoSpace = UserWord.Replace(" ", String.Empty);
+
             int min = 0;
-            int max = UserWord.Length - 1;
+            int max = userWordNoSpace.Length - 1;
             char firstLetter;
             char lastLetter;
 
-            if (UserWord.Length < 2)
+            if (userWordNoSpace.Length < 2)
             {
                 return false;
             }
 
             while (min < max)
             {
-                firstLetter = UserWord[min];
-                lastLetter = UserWord[max];
+                firstLetter = userWordNoSpace[min];
+                lastLetter = userWordNoSpace[max];
 
                 if (char.ToLower(firstLetter) != char.ToLower(lastLetter))
                 {
