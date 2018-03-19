@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Palindrome.Library;
 
 namespace Palindrome.Client
 {
@@ -10,44 +11,36 @@ namespace Palindrome.Client
     {
         static void Main(string[] args)
         {
+            //Object declaration
+            Word word = new Word();
+            OutputConsole OC = new OutputConsole();
 
-            var word = Console.ReadLine();
+            //Asks for user input
+            Console.WriteLine(OC.WelcomePrompt);
+            word.UserWord = Console.ReadLine();
 
-            if(isPalindrome(word))
+            //Processes word and outputs results
+            try
             {
-                Console.WriteLine(word + " is a palindrome.");
-            }
-            else
-            {
-                Console.WriteLine(word + " is not a palindrome.");
-            }
-
-            Console.ReadKey();
-
-        }
-
-        static bool isPalindrome(string word)
-        {
-            int min = 0;
-            int max = word.Length - 1;
-            char firstLetter;
-            char lastLetter;
-
-            while(min < max)
-            {
-                firstLetter = word[min];
-                lastLetter = word[max];
-
-                if (char.ToLower(firstLetter) != char.ToLower(lastLetter))
+                if (word.IsPalindrome())
                 {
-                    return false;
+                    Console.WriteLine(word.UserWord + OC.CorrectPrompt);
                 }
-                min++;
-                max--;
+                else
+                {
+                    Console.WriteLine(word.UserWord + OC.IncorrectPrompt);
+                }
+            }
+            catch
+            {
+                Console.WriteLine(OC.ErrorPrompt);
             }
             
-
-            return true;
+            //Prompts the user to press a button to exit the application
+            Console.WriteLine(OC.ExitPrompt);
+            Console.ReadKey();
         }
+
+        
     }
 }
