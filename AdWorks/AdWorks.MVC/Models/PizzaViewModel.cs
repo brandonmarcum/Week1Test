@@ -6,10 +6,10 @@ namespace AdWorks.MVC.Models
 {
   public class PizzaViewModel
   {
-    [Required(Message = "the message")]
-    [Datatype(Datatype.Email)]
-    [StringLength]
-    [NameValidator(Message = "")]
+    // [Required(Message = "the message")]
+    // [Datatype(Datatype.Email)]
+    // [StringLength]
+    // [NameValidator(Message = "")]
     public string Name
     {
       get;
