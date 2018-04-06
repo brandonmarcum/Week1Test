@@ -11,18 +11,21 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <InstallUrl>http://localhost:8080/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -75,13 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Palindrome.Client_TemporaryKey.pfx" />
-    <None Include="publish\Application Files\Palindrome.Client_1_0_0_0\Palindrome.Client.application" />
-    <None Include="publish\Application Files\Palindrome.Client_1_0_0_0\Palindrome.Client.exe.config.deploy" />
-    <None Include="publish\Application Files\Palindrome.Client_1_0_0_0\Palindrome.Client.exe.deploy" />
-    <None Include="publish\Application Files\Palindrome.Client_1_0_0_0\Palindrome.Client.exe.manifest" />
-    <None Include="publish\Application Files\Palindrome.Client_1_0_0_0\Palindrome.Library.dll.deploy" />
-    <None Include="publish\Palindrome.Client.application" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Palindrome.Library\Palindrome.Library.csproj">
@@ -100,9 +96,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="publish\setup.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
