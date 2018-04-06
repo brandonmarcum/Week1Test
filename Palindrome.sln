@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome.Client", "Palind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome.Library", "Palindrome.Library\Palindrome.Library.csproj", "{2F729F26-F417-4DC7-9DCE-BB096589DC93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{CFE18E56-4124-44E5-AA1F-E7B7B2C54F5A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{2F729F26-F417-4DC7-9DCE-BB096589DC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F729F26-F417-4DC7-9DCE-BB096589DC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F729F26-F417-4DC7-9DCE-BB096589DC93}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CFE18E56-4124-44E5-AA1F-E7B7B2C54F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFE18E56-4124-44E5-AA1F-E7B7B2C54F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFE18E56-4124-44E5-AA1F-E7B7B2C54F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFE18E56-4124-44E5-AA1F-E7B7B2C54F5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
