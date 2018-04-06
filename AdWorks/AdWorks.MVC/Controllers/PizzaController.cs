@@ -31,7 +31,7 @@ namespace AdWorks.MVC.Controllers
 
       }
       
-      Session["Key"] = "Value";
+      // Session["Key"] = "Value";
       return View();
     }
   }
